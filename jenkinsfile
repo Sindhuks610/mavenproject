@@ -7,7 +7,8 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            steps {
+            steps { 
+                git 'https://github.com/Sindhuks610/mavenproject.git'
                 echo 'Pulling code from repository...'
                 // If you're using GitHub integration, Jenkins will handle checkout
             }
