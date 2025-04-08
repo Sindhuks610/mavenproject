@@ -2,13 +2,12 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven 3.8.6' // Make sure Jenkins has this name under Global Tools
+        maven 'Maven-3.8.6' // Make sure Jenkins has this name under Global Tools
     }
 
     stages {
         stage('Checkout') {
-            steps { 
-                git branch: 'main',url:'https://github.com/Sindhuks610/mavenproject.git'
+            steps {
                 echo 'Pulling code from repository...'
                 // If you're using GitHub integration, Jenkins will handle checkout
             }
